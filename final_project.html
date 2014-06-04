@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="highlighter/prettify.css" />
+    <link href="css/bootstrap.min.css" rel="stylesheet"/>
+    <link rel="icon" href="favicon.ico" type="image/icon" size="16x16">
+    <title> Adopt A Pet </title>
+    <style>
+      #title {
+        font-family: "Indie+Flower";
+        font-size: 36px;
+        margin-top: -980px;
+        margin-left: 390px;
+      }
+      #wholeshow {
+        margin-left: 1070px;
+        margin-top: -450px;
+      }
+      #slideshow {
+        margin: 50px auto;
+        position: relative;
+        width: 240px;
+        height: 300px;
+        padding: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+        background-color: lightgrey;
+     }
+     #slideshow > div {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        right: 10px;
+        bottom: 10px;
+      }
+
+
+
+     #slideshow img {
+        max-width:300px;
+        max-height:300px;
+        margin-left: 10px;
+        margin-top: 10px
+    }
+      #divide {
+        width: 1.5px;
+        height: 1022px;
+        background: black;
+        margin-left: 1030px;
+        }
+
+        #catcat2 img{
+        width: 200px;
+        height: 200px;
+        margin-top: 50px;
+        margin-left: 1110px;
+        padding: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+        background-color: lightgrey;
+     
+      }
+
+
+      #catcat2 img:hover {
+        width: 205px;
+        height: 210px;
+        margin-top: 50px;
+        margin-left: 1110px;
+        padding: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+        background-color: lightgrey;
+        opacity:0.5;
+
+
+      }
+      #dogdog2 img {
+        height: 200px;
+        width: 180px;
+        margin-left: 1120px;
+        margin-top: 50px;
+        padding: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+        background-color: lightgrey;
+
+      }
+      #dogdog2 img:hover{
+        height: 220px;
+        width: 200px;
+        margin-left: 1120px;
+        margin-top: 50px;
+        padding: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+        background-color: lightgrey;
+        opacity: 0.5;
+      }
+      #text {
+         width: 500px;
+         height: 300px;
+         margin-left: 250px;
+         font-size: 18px;
+         margin-top: 50px;
+        } 
+      #body {
+        margin-top: 50px;
+      }
+      #first_p {
+        margin-top: 50px;
+      }
+      #second_p {
+        margin-top: 50px;
+      }
+      #lowline {
+        width: 1150px;
+        height: 1.5px;
+        background: black;
+        margin-top: 150px;
+      }
+      #button1 {
+        margin-top: 20px;
+        margin-left: 10px;
+      }
+      #button2 {
+        margin-top: -34px;
+        margin-left: 130px;
+      }
+      #button3 {
+        margin-left: 300px;
+        margin-top: -34px;
+      }
+      #button4 {
+        margin-top: -34px;
+        margin-left: 480px;
+      }
+      #button5 {
+        margin-top: -34px;
+        margin-left: 710px;
+      }
+      #nothing {
+        margin-top: 20px;
+      }
+
+    
+
+
+  </style>
+    <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
+  
+      <!-- Bootstrap -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+
+  <script>
+      $("#slideshow > div:gt(0)").hide();
+    setInterval(function () {
+    $('#slideshow > div:first')
+        .fadeOut(2000)
+        .next()
+        .fadeIn(2000)
+        .end()
+        .appendTo('#slideshow');
+        }, 3000);
+    </script>
+    </head>
+
+
+  <body style="background-color: linen;">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <nav class="navbar navbar-default" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> 
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="home.html"> Pets </a>
+        </div>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="http://www.spcamc.org/adopt/"> Adopt a Pet Now </a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="http://www.spcamc.org"> SPCA Home </a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="Form.html"> Forms </a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+    <div id="divide">
+    </div>
+      <div id="title">
+        <u> ADOPT A PET </u>
+      </div>
+      <div id="text">
+         <div id="body">
+         <p>&nbsp; &nbsp; &nbsp; &nbsp; Pets are not only great campanions, but are fun to have around. If you want information on care for pets this website is not for you. This website is here to inform you about adopttion for pets. There are millions of dogs and cats in adoption centers, and many other animals aswell. The animals at the adoption fecilities or "pound" as it is refered to often, have been left there with out homes. A big problem for animals up for adoption are breeders. Breeders (as the name explains) breed dogs, cats, and many others. Breeders are bringing more animals into the world when there are alredy too many for homes. Some famalies or people buy dogs from breeders insted of adoption, which shouldn't be a problem except that there are too many animals in the pound and they are being put down (killed) everyday. Adopting a pet is alwas a good idea. </p>
+       </div>
+         <div id="first_p">
+         <p> &nbsp; &nbsp; &nbsp; &nbsp; There are many pets to adopt at shelters ranging from dogs, cats, turtles, horses, and much more. If you chose to adopt there will be a small adoption fee. This fee will be put back into the shelter to help rescue more animals. Take a visit to an adopt a pet website to see more details </p>
+         </div>
+         <div id="second_p">
+         <p> &nbsp; &nbsp; &nbsp; &nbsp; Be carefull adopting on line there are many scams. Make sure use visit a cretible website for adoption. The SPCA is a cretible and reputible website that I would recamend. The is a link to the website up on the top bar. If you click "Adopt A Pet Now." it will bring you to their website. The SPCA stands for  Society for the Prevention of Cruelty, the're one of the best adoption centers out there.</div> 
+         </p>
+
+      </div>
+      <div id="wholeshow">
+       <div id="slideshow">
+        <div>
+          <img src="catcat.jpeg" style="width:200px; height:250px">
+        </div>
+        <div>
+          <img src="turtle.jpg" style="width:200px; height:250px">
+        </div>
+        <div>
+          <img src="dogdog.jpeg" style="width:200px; height:250px">
+        </div>
+      </div>
+    </div>
+    <div id="dogdog2">
+      <a href="http://www.spcamc.org/petbridge/animal-details/?aid=68780&cid=6&tid=Dog">
+      <img src="dogdog2.jpg">
+      </a>
+    </div>
+    <div id="catcat2">
+        <a href="http://www.spcamc.org/petbridge/animal-details/?aid=28730&cid=6&tid=Cat">
+      <img src="catcat2.jpg">
+    </a>
+    </div>
+    <div id="lowline">
+    </div>
+    <div id="button1">
+    <a href="http://www.spcamc.org/">
+    <button type="button" class="btn btn-success"> SPCA Home </button>
+    </a>
+    <div id="button2">
+      <a href="http://www.spcamc.org/petbridge/animal-details/?aid=28730&cid=6&tid=Cat">
+      <button type="button" class="btn btn-primary"> Cat On The Right </button>
+      </a>
+    </div>
+    </div>
+    <div id="button3">
+      <a href="http://www.spcamc.org/petbridge/animal-details/?aid=68780&cid=6&tid=Dog">
+      <button type="button" class="btn btn-danger"> Dog On The Right </button>
+   </a>
+    </div>
+    <div id="button4">
+      <a href="http://www.spcamc.org/petbridge/animal-details/?aid=68780&cid=6&tid=Dog">
+      <button type="button" class="btn btn-warning"> SPCA Main Adoption Page</button>
+      </a>
+    </div>
+    <div id="button5">
+      <a href="form.html">
+      <button type="button" class="btn btn-info"> Forms </button>
+      </a>
+    </div>
+    <div id="nothing">
+    </div>
+  </body>
+</html>
